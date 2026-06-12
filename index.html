@@ -1,0 +1,391 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rines Secondary School - Shaping Future Leaders</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Top Strip Marquee - FIXED BELOW NAVBAR -->
+    <div class="marquee">
+        <div class="marquee-content">
+            <span>Rines Secondary School // Magezi Ntake // Enroll Now</span>
+            <span>Rines Secondary School // Magezi Ntake // Enroll Now</span>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-container">
+                    <div class="logo-icon">R</div>
+                    <div class="logo-text">
+                        <div class="logo-name">RINES</div>
+                        <div class="logo-subtitle">Secondary School</div>
+                    </div>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="blog-and-news.html">Blog & News</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="#admissions" class="enroll-btn">Enroll Now</a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero" style="background-image: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');">
+        <div class="hero-overlay"></div>
+        <div class="hero-image"></div>
+        <div class="hero-content">
+            <span class="hero-tagline">WE STRIVE FOR EXCELLENCE</span>
+            <h1 class="hero-title">Rines Secondary School</h1>
+            <p class="hero-subtitle">O and A levels—holistic education rooted in Christian values, strong academics, and caring mentorship.</p>
+
+            <div class="hero-buttons">
+                <a href="admissions.html" class="btn btn-white btn-cta-primary">Apply for Admissions</a>
+                <a href="#about" class="btn btn-outline btn-cta-secondary">Schedule a Visit</a>
+                <a href="tel:+256414123456" class="btn btn-white btn-cta-tertiary" aria-label="Call Admissions Office">Call Admissions</a>
+            </div>
+        </div>
+
+        <!-- Student Outcomes / Animated Stats -->
+        <section class="student-outcomes" aria-label="Student outcomes">
+            <div class="student-outcomes-inner container">
+                <div class="student-outcomes-header">
+                    <span class="section-label">STUDENT OUTCOMES</span>
+                    <h2>Results you can feel proud of</h2>
+                    <p>See what our learners achieve with dedication, mentorship, and strong values.</p>
+                </div>
+
+                <div class="student-outcomes-grid" role="list">
+                    <div class="stat-card" role="listitem">
+                        <div class="stat-icon" aria-hidden="true"><i class="fas fa-users"></i></div>
+                        <div class="stat-value" aria-live="polite" aria-atomic="true">
+                            <span class="stat-number" data-target="1250" data-suffix="+">0</span>
+                        </div>
+                        <div class="stat-label">Students enrolled</div>
+                    </div>
+
+                    <div class="stat-card" role="listitem">
+                        <div class="stat-icon" aria-hidden="true"><i class="fas fa-chart-line"></i></div>
+                        <div class="stat-value" aria-live="polite" aria-atomic="true">
+                            <span class="stat-number" data-target="92" data-suffix="%">0</span>
+                        </div>
+                        <div class="stat-label">Pass rate (UCE/UACE)</div>
+                    </div>
+
+                    <div class="stat-card" role="listitem">
+                        <div class="stat-icon" aria-hidden="true"><i class="fas fa-chalkboard-teacher"></i></div>
+                        <div class="stat-value" aria-live="polite" aria-atomic="true">
+                            <span class="stat-number" data-target="85" data-suffix="">0</span>
+                        </div>
+                        <div class="stat-label">Dedicated teachers</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hero Feature Cards Section -->
+        <section class="hero-features">
+
+            <div class="hero-features-grid">
+                <div class="hero-feature-card">
+                    <div class="hero-feature-icon">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <h3>Academic Excellence</h3>
+                    <p>Engaging, student-focused lessons led by dedicated teachers and supported by comprehensive assessments.</p>
+                </div>
+                <div class="hero-feature-card">
+                    <div class="hero-feature-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Values & Character</h3>
+                    <p>A nurturing environment that fosters discipline, integrity, leadership, and a spirit of service.</p>
+                </div>
+                <div class="hero-feature-card">
+                    <div class="hero-feature-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Co-curricular Growth</h3>
+                    <p>Active clubs, sports, and creative arts that encourage every student to explore and develop their talents.</p>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- About Section with Image & Features -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-header">
+                <span class="section-label">WELCOME TO RINES SECONDARY SCHOOL</span>
+                <h2>Where every student is seen, nurtured and equipped to thrive.</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Rines Secondary School campus">
+                </div>
+                <div class="about-features">
+                    <p class="about-description">We are a learner-centered community committed to nurturing confident, compassionate and capable young leaders.</p>
+                    <div class="about-features-grid">
+                        <div class="about-feature-item">
+                            <h4>Holistic Learning</h4>
+                            <p>Balanced academics, arts, sports and spiritual formation tailored to every learner.</p>
+                        </div>
+                        <div class="about-feature-item">
+                            <h4>Dedicated Educators</h4>
+                            <p>Experienced teachers who mentor, coach and inspire with passion.</p>
+                        </div>
+                        <div class="about-feature-item">
+                            <h4>Vibrant Community</h4>
+                            <p>A supportive campus environment where students thrive together.</p>
+                        </div>
+                        <div class="about-feature-item">
+                            <h4>Strong Values</h4>
+                            <p>Character development rooted in integrity, excellence and service.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Life on Campus Section -->
+    <section class="life-on-campus">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">LIFE ON CAMPUS</span>
+                <h2>Life on Campus</h2>
+                <p class="section-description">A vibrant community where students learn, grow, and thrive.</p>
+            </div>
+            <div class="campus-content">
+                <div class="campus-cards">
+                    <div class="campus-card">
+                        <div class="campus-card-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <h3>Academic Excellence</h3>
+                        <p>Engaging, student-focused lessons led by dedicated teachers and supported by comprehensive assessments.</p>
+                    </div>
+                    <div class="campus-card">
+                        <div class="campus-card-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Values & Character</h3>
+                        <p>A nurturing environment that fosters discipline, integrity, leadership, and a spirit of service.</p>
+                    </div>
+                    <div class="campus-card">
+                        <div class="campus-card-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3>Co-curricular Growth</h3>
+                        <p>Active clubs, ICT lessons, sports, and creative arts that encourage every student to explore and develop their talents.</p>
+                    </div>
+                </div>
+                <div class="enrichment-box">
+                    <span class="enrichment-label">ENRICHMENT</span>
+                    <h3>Weekly clubs and skill sessions keep curiosity alive.</h3>
+                    <ul class="enrichment-list">
+                        <li>Coding, robotics and science club projects, ICT Practical lessons</li>
+                        <li>Swimming, athletics, football and netball training</li>
+                        <li>Debate, public speaking and Young Leaders forum</li>
+                        <li>Music, dance, drama and fine art studio time</li>
+                    </ul>
+                    <a href="academics.html" class="btn btn-white">View co-curricular timetable</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events & Academic Streams Section -->
+    <section class="events-streams">
+        <div class="container">
+            <div class="events-streams-grid">
+                <!-- Upcoming Events -->
+                <div class="events-column">
+                    <div class="events-header">
+                        <span class="section-label">UPCOMING EVENTS</span>
+                        <h2>Upcoming Events</h2>
+                        <p>Stay updated with our latest news and events.</p>
+                    </div>
+                    <div class="events-list">
+                        <div class="event-card">
+                            <div class="event-icon">
+                                <i class="fas fa-calculator"></i>
+                            </div>
+                            <div class="event-details">
+                                <span class="event-date">2026-03-28</span>
+                                <h4>Mathematics Contest at Makerere University</h4>
+                                <p>Our students will be participating in the Math Contest that happens every year</p>
+                                <a href="blog-and-news.html" class="learn-more">Learn more <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="event-card">
+                            <div class="event-icon">
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <div class="event-details">
+                                <span class="event-date">2026-03-16</span>
+                                <h4>DEAR WEEK</h4>
+                                <p>Theme: Creating Hope Through Reading. March 16-19th</p>
+                                <a href="blog-and-news.html" class="learn-more">Learn more <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Academic Streams -->
+                <div class="streams-column">
+                    <div class="streams-header">
+                        <span class="section-label">ACADEMIC STREAMS</span>
+                        <h2>Explore our classes</h2>
+                    </div>
+                    <div class="streams-list">
+                        <a href="academics.html" class="stream-item">Form 1</a>
+                        <a href="academics.html" class="stream-item">Form 2</a>
+                        <a href="academics.html" class="stream-item">Form 3</a>
+                        <a href="academics.html" class="stream-item">Form 4</a>
+                        <a href="academics.html" class="stream-item">Form 5 (A-Level)</a>
+                        <a href="academics.html" class="stream-item">Form 6 (A-Level)</a>
+                    </div>
+                    <div class="term-dates-box">
+                        <h4>Term Dates & Circulars</h4>
+                        <p>Download schedules, assessment calendars and important communications from administration.</p>
+                        <a href="academics.html" class="btn btn-outline">Request document pack <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enrolment CTA Section -->
+    <section id="admissions" class="enrolment-cta" style="background-image: url('https://images.unsplash.com/photo-1576916813484-b87d9e54184e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');">
+        <div class="enrolment-overlay"></div>
+        <div class="enrolment-wrapper">
+            <div class="enrolment-content">
+                <span class="enrolment-label">ENROLMENT OPEN</span>
+                <h2>Ready to Join Us?</h2>
+                <p>Discover how your child can become part of our community.</p>
+                <div class="enrolment-details">
+                    <p>We welcome prospective parents for personalised tours, admissions consultations and taster class experiences for pupils.</p>
+                </div>
+            </div>
+            <div class="enrolment-buttons">
+                <a href="tel:+256414123456" class="btn btn-white">Call Admissions Office</a>
+                <a href="admissions.html" class="btn btn-outline">Request Prospectus</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- About Section -->
+                <div class="footer-section footer-about">
+                    <div class="footer-logo">
+                        <div class="footer-logo-icon">R</div>
+                        <div class="footer-logo-text">
+                            <h4>Rines</h4>
+                            <p>Secondary School</p>
+                        </div>
+                    </div>
+                    <p>Empowering students to achieve excellence in academics, character, and creativity since 2009.</p>
+                    <div class="footer-social">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <div class="footer-links">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About Us</a>
+                        <a href="academics.html">Academics</a>
+                        <a href="admissions.html">Admissions</a>
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+
+                <!-- Featured Links -->
+                <div class="footer-section">
+                    <h3>Featured Links</h3>
+                    <div class="footer-links">
+                        <a href="#">Parent Portal</a>
+                        <a href="#">Administration</a>
+                        <a href="#">Virtual School</a>
+                        <a href="#">Highlights</a>
+                        <a href="#">Academic Programs</a>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-section footer-contact">
+                    <h3>Contact Info</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Rines Road, Kampala, Uganda</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+256 414 123 456</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>rinesschoolsnamusera@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <p>Mon - Fri: 7:00 AM - 5:00 PM</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-divider"></div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Rines Secondary School. All rights reserved. | Magezi Ntake, Uganda</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chatbot -->
+    <div id="chatbot-btn" class="chatbot-btn">
+        <i class="fas fa-comments"></i>
+    </div>
+    <div id="chatbot" class="chatbot">
+        <div class="chatbot-header">
+            <span>Rines Assistant</span>
+            <button id="close-chatbot">×</button>
+        </div>
+        <div class="chatbot-messages">
+            <div class="message bot">Hello! How can I help you today?</div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" id="chat-input" placeholder="Type your message...">
+            <button id="send-chat"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

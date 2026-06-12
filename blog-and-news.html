@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rines Secondary School - Blog & News</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Marquee -->
+    <div class="marquee">
+        <div class="marquee-content">
+            <span>Rines Secondary School // Blog & News // Stories & Updates</span>
+            <span>Rines Secondary School // Blog & News // Stories & Updates</span>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-container">
+                    <div class="logo-icon">R</div>
+                    <div class="logo-text">
+                        <div class="logo-name">RINES</div>
+                        <div class="logo-subtitle">Secondary School</div>
+                    </div>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="blog-and-news.html" class="active">Blog & News</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="admissions.html" class="enroll-btn">Enroll Now</a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero blog-news-hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Blog & News</h1>
+            <p class="hero-subtitle">Stories, insights, and updates from Rines Secondary School</p>
+            <div class="hero-buttons">
+                <input type="text" id="search-content" placeholder="🔍 Search articles & news..." class="search-input">
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Tabs + Category Chips + Search -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-bar" role="region" aria-label="Filter blog and news">
+                <div class="filter-tabs" role="tablist" aria-label="Content type">
+
+                    <button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">All Content</button>
+                    <button class="filter-btn" type="button" data-filter="news" aria-pressed="false">News</button>
+                    <button class="filter-btn" type="button" data-filter="blog" aria-pressed="false">Blog Articles</button>
+                </div>
+
+                <div class="category-search">
+                    <div class="category-chips" role="group" aria-label="Category">
+                        <button class="chip active" type="button" data-category="all" aria-pressed="true">All</button>
+                        <button class="chip" type="button" data-category="Academics" aria-pressed="false">Academics</button>
+                        <button class="chip" type="button" data-category="Events" aria-pressed="false">Events</button>
+                        <button class="chip" type="button" data-category="Achievements" aria-pressed="false">Achievements</button>
+                        <button class="chip" type="button" data-category="Technology" aria-pressed="false">Technology</button>
+                        <button class="chip" type="button" data-category="Sports" aria-pressed="false">Sports</button>
+                        <button class="chip" type="button" data-category="Community" aria-pressed="false">Community</button>
+                        <button class="chip" type="button" data-category="Mental Health" aria-pressed="false">Mental Health</button>
+                    </div>
+
+                    <div class="search-box">
+                        <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                        <input type="text" id="search-content" placeholder="Search articles & news (title, author, category)..." class="search-input" autocomplete="off" aria-label="Search articles" />
+                        <button type="button" id="clear-search" class="search-clear" aria-label="Clear search" title="Clear">✕</button>
+                    </div>
+                </div>
+
+                <div class="results-meta" aria-live="polite">
+                    <span id="results-count">Showing 0</span>
+                    <button type="button" class="btn btn-secondary btn-sm" id="reset-filters" style="display:none;">Reset</button>
+                </div>
+
+            <div class="search-empty" id="search-empty" hidden>
+                <div class="search-empty-inner">
+                    <div class="search-empty-icon" aria-hidden="true"><i class="fa-solid fa-circle-xmark"></i></div>
+                    <h3>No matching stories</h3>
+                    <p>Try a different search or category.</p>
+                    <button type="button" class="btn btn-primary" id="empty-reset">Reset filters</button>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Featured Content -->
+    <section class="featured-content-section">
+        <div class="container">
+            <h2 class="section-title">Featured This Week</h2>
+            <div class="featured-grid">
+                <!-- Featured News -->
+                <div class="featured-item featured-news-item" data-type="news" data-category="Achievements" data-author="Admin" data-title="98% Pass Rate - Best in District!" data-excerpt="Rines Secondary School achieves highest pass rate in district history." data-reading-min="4" role="article" tabindex="-1">
+                    <img src="https://images.unsplash.com/photo-1519452635265-7b1fbfd1e87b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Featured News">
+                    <div class="featured-overlay">
+                        <span class="featured-badge">News</span>
+                        <h3>98% Pass Rate - Best in District!</h3>
+                        <div class="featured-meta">
+                            <span class="featured-date">Jan 15, 2024</span>
+                            <span class="featured-dot">•</span>
+                            <span class="featured-author">By Admin</span>
+                            <span class="featured-dot">•</span>
+                            <span class="featured-reading">4 min read</span>
+                        </div>
+                        <p>Rines Secondary School achieves highest pass rate in district history.</p>
+                        <a href="#" class="read-more" data-open-author="Admin" aria-label="Read more: 98% Pass Rate - Best in District!">Read More →</a>
+                    </div>
+                </div>
+
+                <!-- Featured Blog Post -->
+                <div class="featured-item featured-blog-item" data-type="blog" data-category="Technology" data-author="Science Dept" data-title="Science Fair National Champions" data-excerpt="Three projects win gold at national competition." data-reading-min="5" role="article" tabindex="-1">
+                    <img src="https://images.unsplash.com/photo-1524178232363-933d15ad1029?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Featured Blog">
+                    <div class="featured-overlay">
+                        <span class="featured-badge blog">Blog</span>
+                        <h3>Science Fair National Champions</h3>
+                        <div class="featured-meta">
+                            <span class="featured-date">Mar 20, 2024</span>
+                            <span class="featured-dot">•</span>
+                            <span class="featured-author">By Science Dept</span>
+                            <span class="featured-dot">•</span>
+                            <span class="featured-reading">5 min read</span>
+                        </div>
+                        <p>Three projects win gold at national competition.</p>
+                        <a href="#" class="read-more" data-open-author="Science Dept" aria-label="Read more: Science Fair National Champions">Read More →</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Grid -->
+    <section class="content-grid-section">
+        <div class="container">
+            <h2 class="section-title">Latest Updates</h2>
+            <div class="content-grid" id="content-grid">
+                <!-- NEWS ITEMS -->
+                <article class="content-card news-card" data-type="news" data-category="Events" data-author="Science Dept" data-title="Regional Science Fair Victory" data-excerpt="Our students win 3 gold medals at regional science competition." data-reading-min="6">
+                    <div class="content-image">
+                        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=500&q=80" alt="Regional Science Fair Victory">
+                        <span class="content-badge">News</span>
+                    </div>
+                    <div class="content-body">
+                        <span class="post-category event">Events</span>
+                        <h3>Regional Science Fair Victory</h3>
+                        <p>Our students win 3 gold medals at regional science competition.</p>
+                        <div class="content-footer">
+                            <span class="meta-line"><i class="far fa-calendar" aria-hidden="true"></i> Feb 20, 2024</span>
+                            <span class="meta-line"><i class="far fa-user" aria-hidden="true"></i> Science Dept</span>
+                            <span class="meta-line"><i class="far fa-clock" aria-hidden="true"></i> 6 min read</span>
+                            <a href="#" class="read-more" data-open-author="Science Dept" aria-label="Read more: Regional Science Fair Victory">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="content-card news-card" data-type="news" data-category="Achievements" data-author="Admin" data-title="Student Leadership Summit 2024" data-excerpt="Our top students presented at the national leadership conference." data-reading-min="5">
+                    <div class="content-image">
+                        <img src="https://images.unsplash.com/photo-1517245386807-1e5d95ea0075?auto=format&fit=crop&w=500&q=80" alt="Student Leadership Summit 2024">
+                        <span class="content-badge">News</span>
+                    </div>
+                    <div class="content-body">
+                        <span class="post-category event">Events</span>
+                        <h3>Student Leadership Summit 2024</h3>
+                        <p>Our top students presented at the national leadership conference.</p>
+                        <div class="content-footer">
+                            <span class="meta-line"><i class="far fa-calendar" aria-hidden="true"></i> Feb 15, 2024</span>
+                            <span class="meta-line"><i class="far fa-user" aria-hidden="true"></i> Admin</span>
+                            <span class="meta-line"><i class="far fa-clock" aria-hidden="true"></i> 5 min read</span>
+                            <a href="#" class="read-more" data-open-author="Admin" aria-label="Read more: Student Leadership Summit 2024">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="content-card news-card" data-type="news" data-category="Community" data-author="Office of Student Affairs" data-title="New Sports Complex Opening Soon" data-excerpt="Exciting new facilities for our athletic programs coming next term." data-reading-min="4">
+                    <div class="content-image">
+                        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=500&q=80" alt="New Sports Complex Opening Soon">
+                        <span class="content-badge">News</span>
+                    </div>
+                    <div class="content-body">
+                        <span class="post-category">Announcement</span>
+                        <h3>New Sports Complex Opening Soon</h3>
+                        <p>Exciting new facilities for our athletic programs coming next term.</p>
+                        <div class="content-footer">
+                            <span class="meta-line"><i class="far fa-calendar" aria-hidden="true"></i> Feb 10, 2024</span>
+                            <span class="meta-line"><i class="far fa-user" aria-hidden="true"></i> Office of Student Affairs</span>
+                            <span class="meta-line"><i class="far fa-clock" aria-hidden="true"></i> 4 min read</span>
+                            <a href="#" class="read-more" data-open-author="Office of Student Affairs" aria-label="Read more: New Sports Complex Opening Soon">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+
+
+                <!-- BLOG ARTICLES -->
+                <article class="content-card blog-card" data-type="blog" data-category="Technology" data-author="James Chavula" data-title="Digital Literacy in the Modern Classroom" data-excerpt="How we're preparing students with essential digital skills for the 21st century." data-reading-min="7">
+                    <div class="content-image">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Digital Literacy in the Modern Classroom">
+                        <span class="content-badge blog">Blog</span>
+                    </div>
+                    <div class="content-body">
+                        <span class="post-category">Technology</span>
+                        <h3>Digital Literacy in the Modern Classroom</h3>
+                        <p>How we're preparing students with essential digital skills for the 21st century.</p>
+                        <div class="content-footer">
+                            <span class="meta-line"><i class="far fa-calendar" aria-hidden="true"></i> March 5, 2024</span>
+                            <span class="meta-line"><i class="far fa-user" aria-hidden="true"></i> James Chavula</span>
+                            <span class="meta-line"><i class="far fa-clock" aria-hidden="true"></i> 7 min read</span>
+                            <a href="#" class="read-more" data-open-author="James Chavula" aria-label="Read more: Digital Literacy in the Modern Classroom">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="content-card blog-card" data-type="blog" data-category="Events" data-author="Dr. Patricia Okonkwo" data-title="Annual Science Symposium 2024" data-excerpt="Students showcase groundbreaking projects and research findings at our prestigious annual event." data-reading-min="6">
+                    <div class="content-image">
+                        <img src="https://images.unsplash.com/photo-1535016120754-fd45532defcf?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Annual Science Symposium 2024">
+                        <span class="content-badge blog">Blog</span>
+                    </div>
+                    <div class="content-body">
+                        <span class="post-category event">Events</span>
+                        <h3>Annual Science Symposium 2024</h3>
+                        <p>Students showcase groundbreaking projects and research findings at our prestigious annual event.</p>
+                        <div class="content-footer">
+                            <span class="meta-line"><i class="far fa-calendar" aria-hidden="true"></i> February 28, 2024</span>
+                            <span class="meta-line"><i class="far fa-user" aria-hidden="true"></i> Dr. Patricia Okonkwo</span>
+                            <span class="meta-line"><i class="far fa-clock" aria-hidden="true"></i> 6 min read</span>
+                            <a href="#" class="read-more" data-open-author="Dr. Patricia Okonkwo" aria-label="Read more: Annual Science Symposium 2024">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="content-card blog-card" data-type="blog" data-category="Academics" data-author="Emma Kamwi" data-title="Success Stories: From Rines to University" data-excerpt="Meet our alumni and hear about their journey through Rines and beyond to prestigious universities." data-reading-min="5">
+                    <div class="content-image">
+                        <img src="https://images.unsplash.com/photo-1517245386807-1e5d95ea0075?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Success Stories: From Rines to University">
+                        <span class="content-badge blog">Blog</span>
+                    </div>
+                    <div class="content-body">
+                        <span class="post-category">Academics</span>
+                        <h3>Success Stories: From Rines to University</h3>
+                        <p>Meet our alumni and hear about their journey through Rines and beyond to prestigious universities.</p>
+                        <div class="content-footer">
+                            <span class="meta-line"><i class="far fa-calendar" aria-hidden="true"></i> February 20, 2024</span>
+                            <span class="meta-line"><i class="far fa-user" aria-hidden="true"></i> Emma Kamwi</span>
+                            <span class="meta-line"><i class="far fa-clock" aria-hidden="true"></i> 5 min read</span>
+                            <a href="#" class="read-more" data-open-author="Emma Kamwi" aria-label="Read more: Success Stories: From Rines to University">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="content-card blog-card" data-type="blog" data-category="Sports" data-author="Coach Michael Lwanga" data-title="Building Champions: Our Athletic Development Program" data-excerpt="Explore how our comprehensive sports program develops not just athletes, but well-rounded individuals." data-reading-min="6">
+                    <div class="content-image">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f70504c0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Building Champions: Our Athletic Development Program">
+                        <span class="content-badge blog">Blog</span>
+                    </div>
+                    <div class="content-body">
+                        <span class="post-category">Sports</span>
+                        <h3>Building Champions: Our Athletic Development Program</h3>
+                        <p>Explore how our comprehensive sports program develops not just athletes, but well-rounded individuals.</p>
+                        <div class="content-footer">
+                            <span class="meta-line"><i class="far fa-calendar" aria-hidden="true"></i> February 15, 2024</span>
+                            <span class="meta-line"><i class="far fa-user" aria-hidden="true"></i> Coach Michael Lwanga</span>
+                            <span class="meta-line"><i class="far fa-clock" aria-hidden="true"></i> 6 min read</span>
+                            <a href="#" class="read-more" data-open-author="Coach Michael Lwanga" aria-label="Read more: Building Champions: Our Athletic Development Program">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="content-card blog-card" data-type="blog" data-category="Community" data-author="Grace Nkomo" data-title="Community Service: Making a Real Difference" data-excerpt="How our students contribute to the community and develop a sense of social responsibility." data-reading-min="5">
+                    <div class="content-image">
+                        <img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Community Service: Making a Real Difference">
+                        <span class="content-badge blog">Blog</span>
+                    </div>
+                    <div class="content-body">
+                        <span class="post-category">Community</span>
+                        <h3>Community Service: Making a Real Difference</h3>
+                        <p>How our students contribute to the community and develop a sense of social responsibility.</p>
+                        <div class="content-footer">
+                            <span class="meta-line"><i class="far fa-calendar" aria-hidden="true"></i> February 10, 2024</span>
+                            <span class="meta-line"><i class="far fa-user" aria-hidden="true"></i> Grace Nkomo</span>
+                            <span class="meta-line"><i class="far fa-clock" aria-hidden="true"></i> 5 min read</span>
+                            <a href="#" class="read-more" data-open-author="Grace Nkomo" aria-label="Read more: Community Service: Making a Real Difference">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="content-card blog-card" data-type="blog" data-category="Mental Health" data-author="Dr. Elizabeth Mukwaya" data-title="Student Wellness: Prioritizing Mental Health" data-excerpt="Our holistic approach to student wellbeing includes counseling, mindfulness, and support programs." data-reading-min="6">
+                    <div class="content-image">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Student Wellness: Prioritizing Mental Health">
+                        <span class="content-badge blog">Blog</span>
+                    </div>
+                    <div class="content-body">
+                        <span class="post-category">Mental Health</span>
+                        <h3>Student Wellness: Prioritizing Mental Health</h3>
+                        <p>Our holistic approach to student wellbeing includes counseling, mindfulness, and support programs.</p>
+                        <div class="content-footer">
+                            <span class="meta-line"><i class="far fa-calendar" aria-hidden="true"></i> February 5, 2024</span>
+                            <span class="meta-line"><i class="far fa-user" aria-hidden="true"></i> Dr. Elizabeth Mukwaya</span>
+                            <span class="meta-line"><i class="far fa-clock" aria-hidden="true"></i> 6 min read</span>
+                            <a href="#" class="read-more" data-open-author="Dr. Elizabeth Mukwaya" aria-label="Read more: Student Wellness: Prioritizing Mental Health">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to get the latest news and blog articles from Rines Secondary School.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- About Section -->
+                <div class="footer-section footer-about">
+                    <div class="footer-logo">
+                        <div class="footer-logo-icon">R</div>
+                        <div class="footer-logo-text">
+                            <h4>Rines</h4>
+                            <p>Secondary School</p>
+                        </div>
+                    </div>
+                    <p>Empowering students to achieve excellence in academics, character, and creativity since 2009.</p>
+                    <div class="footer-social">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <div class="footer-links">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About Us</a>
+                        <a href="academics.html">Academics</a>
+                        <a href="admissions.html">Admissions</a>
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+
+                <!-- Featured Links -->
+                <div class="footer-section">
+                    <h3>Featured Links</h3>
+                    <div class="footer-links">
+                        <a href="#">Parent Portal</a>
+                        <a href="#">Administration</a>
+                        <a href="#">Virtual School</a>
+                        <a href="#">School Highlights</a>
+                        <a href="#">Academic Programs</a>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-section footer-contact">
+                    <h3>Contact Info</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Rines Road, Kampala, Uganda</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+256 414 123 456</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>rinesschoolsnamusera@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <p>Mon - Fri: 7:00 AM - 5:00 PM</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-divider"></div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Rines Secondary School. All rights reserved. | Magezi Ntake, Uganda</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Author Profile Modal -->
+    <div class="author-modal" id="author-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Author profile">
+        <div class="author-modal-backdrop" data-close-author-modal="true"></div>
+        <div class="author-modal-panel" role="document">
+            <button type="button" class="author-modal-close" id="author-modal-close" aria-label="Close author profile">
+                <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+            </button>
+
+            <div class="author-modal-header">
+                <div class="author-avatar" id="author-avatar" aria-hidden="true">A</div>
+                <div>
+                    <div class="author-name" id="author-name">Author Name</div>
+                    <div class="author-role" id="author-role">School Writer</div>
+                </div>
+            </div>
+
+            <p class="author-bio" id="author-bio">
+                Short bio about the author will appear here.
+            </p>
+
+            <div class="author-actions">
+                <div class="author-social">
+                    <a href="#" aria-label="Author Facebook" class="author-social-link"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Author Twitter" class="author-social-link"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Author Instagram" class="author-social-link"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Author YouTube" class="author-social-link"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+            <div class="author-modal-divider"></div>
+
+            <div class="author-modal-posts">
+                <h3 class="author-modal-posts-title">More from this author</h3>
+                <div class="author-modal-posts-list" id="author-modal-posts-list"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chatbot -->
+    <div id="chatbot-btn" class="chatbot-btn">
+        <i class="fas fa-comments"></i>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

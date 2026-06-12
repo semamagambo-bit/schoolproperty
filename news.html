@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rines Secondary School - News & Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Marquee FIXED below navbar -->
+    <div class="marquee">
+        <div class="marquee-content">
+            <span>Rines Secondary School // Latest News & Updates // Magezi Ntake</span>
+            <span>Rines Secondary School // Latest News & Updates // Magezi Ntake</span>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-container">
+                    <div class="logo-icon">R</div>
+                    <div class="logo-text">
+                        <div class="logo-name">RINES</div>
+                        <div class="logo-subtitle">Secondary School</div>
+                    </div>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="news.html" class="active">News</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+            <a href="admissions.html" class="enroll-btn">Enroll Now</a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- News Hero -->
+    <section class="hero news-hero">
+        <div class="hero-content">
+            <h1 class="hero-title">School News</h1>
+            <p class="hero-subtitle">Latest updates, achievements, and announcements from Rines Secondary School</p>
+            <div class="hero-buttons">
+                <input type="text" id="news-search" placeholder="🔍 Search news..." class="blog-search">
+                <button class="btn btn-primary">Latest</button>
+            </div>
+        </div>
+        <div class="featured-news">
+            <img src="https://images.unsplash.com/photo-1519452635265-7b1fbfd1e87b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Graduation">
+            <div class="news-meta">
+                <span class="post-category">Achievement</span>
+                <h2>98% Pass Rate - Best in District!</h2>
+                <p>Published Jan 15, 2024</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Grid -->
+    <section class="news-section">
+        <div class="container">
+            <div class="news-grid" id="news-grid">
+                <article class="news-card">
+                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=500&q=80" alt="Science Fair">
+                    <div class="news-content">
+                        <span class="post-category event">Event</span>
+                        <h3>Regional Science Fair Victory</h3>
+                        <p>Our students win 3 gold medals at regional science competition.</p>
+                        <div class="news-footer">
+                            <span>Feb 20, 2024</span>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </article>
+                <!-- More news cards populated by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Rines Secondary School. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Chatbot -->
+    <div id="chatbot-btn" class="chatbot-btn">
+        <i class="fas fa-comments"></i>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

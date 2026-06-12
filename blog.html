@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Rines Secondary School</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Marquee -->
+    <div class="marquee">
+        <div class="marquee-content">
+            <span>Rines Secondary School // School Blog // Stories & Insights</span>
+            <span>Rines Secondary School // School Blog // Stories & Insights</span>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-container">
+                    <div class="logo-icon">R</div>
+                    <div class="logo-text">
+                        <div class="logo-name">RINES</div>
+                        <div class="logo-subtitle">Secondary School</div>
+                    </div>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="news.html">News</a></li>
+            </ul>
+            <a href="admissions.html" class="enroll-btn">Enroll Now</a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Hero -->
+    <section class="hero blog-hero">
+        <div class="hero-content">
+            <h1 class="hero-title">School Blog</h1>
+            <p class="hero-subtitle">Insights, stories, and updates from our school community</p>
+            <div class="hero-buttons">
+                <input type="text" id="blog-search" placeholder="Search posts..." class="search-input">
+                <select id="blog-categories">
+                    <option>All</option>
+                    <option>Academics</option>
+                    <option>Events</option>
+                    <option>Achievements</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Posts -->
+    <section class="blog-posts">
+        <div class="container">
+            <div class="posts-grid">
+                <article class="blog-post">
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1519452635265-7b1fbfd1e87b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Graduation">
+                    </div>
+                    <div class="post-content">
+                        <span class="post-tag">Achievement</span>
+                        <h2>98% Pass Rate - Record Breaking Results</h2>
+                        <div class="post-meta">
+                            <span><i class="far fa-calendar"></i> Jan 15, 2024</span>
+                            <span><i class="far fa-user"></i> Admin</span>
+                        </div>
+                        <p>Rines Secondary School achieves highest pass rate in district history...</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="blog-post">
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Science">
+                    </div>
+                    <div class="post-content">
+                        <span class="post-tag">Science</span>
+                        <h2>Science Fair National Champions</h2>
+                        <div class="post-meta">
+                            <span><i class="far fa-calendar"></i> Mar 20, 2024</span>
+                            <span><i class="far fa-user"></i> Science Dept</span>
+                        </div>
+                        <p>Three projects win gold at national competition...</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="blog-post">
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1524178232363-933d15ad1029?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Sports">
+                    </div>
+                    <div class="post-content">
+                        <span class="post-tag">Sports</span>
+                        <h2>Athletics Regional Victory</h2>
+                        <div class="post-meta">
+                            <span><i class="far fa-calendar"></i> Apr 5, 2024</span>
+                            <span><i class="far fa-user"></i> Coach M</span>
+                        </div>
+                        <p>Track team brings home 8 medals...</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sidebar (Desktop) -->
+    <aside class="blog-sidebar">
+        <div class="container">
+            <div class="sidebar-widget">
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="#">Academics <span>(12)</span></a></li>
+                    <li><a href="#">Events <span>(8)</span></a></li>
+                    <li><a href="#">Achievements <span>(15)</span></a></li>
+                    <li><a href="#">Admissions <span>(5)</span></a></li>
+                </ul>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Recent Posts</h3>
+                <ul>
+                    <li>Athletics Victory</li>
+                    <li>Science Fair Gold</li>
+                    <li>98% Pass Rate</li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Rines Secondary School | Stories that Inspire</p>
+        </div>
+    </footer>
+
+    <!-- Chatbot -->
+    <div id="chatbot-btn" class="chatbot-btn">
+        <i class="fas fa-comments"></i>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

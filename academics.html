@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academics - Rines Secondary School</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Marquee -->
+    <div class="marquee">
+        <div class="marquee-content">
+            <span>Rines Secondary School // Academic Excellence // Preparing Future Leaders</span>
+            <span>Rines Secondary School // Academic Excellence // Preparing Future Leaders</span>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-container">
+                    <div class="logo-icon">R</div>
+                    <div class="logo-text">
+                        <div class="logo-name">RINES</div>
+                        <div class="logo-subtitle">Secondary School</div>
+                    </div>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="academics.html" class="active">Academics</a></li>
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="blog-and-news.html">Blog & News</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="admissions.html" class="enroll-btn">Enroll Now</a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Academics Hero -->
+    <section class="academics-hero">
+        <div class="academics-hero-background"></div>
+        <div class="academics-hero-overlay"></div>
+        <div class="academics-hero-content">
+            <div class="academics-hero-label">ACADEMICS</div>
+            <h1 class="academics-hero-title">Discover our world-class academic programs and curriculum designed to inspire excellence</h1>
+            <p class="academics-hero-description">We provide comprehensive, future-ready academic framework designed to nurture critical thinkers, innovative leaders, and globally competitive citizens ready for university and beyond.</p>
+            <div class="academics-hero-filters">
+                <button class="filter-btn active" data-filter="all">O-Level</button>
+                <button class="filter-btn" data-filter="a-level">A-Level</button>
+                <button class="filter-btn" data-filter="assessment">Assessment</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subjects Offered -->
+    <section class="subjects-offered">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Subjects Offered</h2>
+                <p class="section-subtitle">A wide range of sciences, humanities, and vocational subjects.</p>
+            </div>
+            <div class="subjects-cards-grid" role="list" aria-label="Subjects offered">
+                <button type="button" class="subject-card" role="listitem" data-subject="Math" data-levels="o-level a-level assessment" aria-label="Open Math details">
+                    <span class="subject-dot"></span>
+                    <h3>Math</h3>
+                </button>
+                <button type="button" class="subject-card" role="listitem" data-subject="Agriculture" data-levels="o-level assessment" aria-label="Open Agriculture details">
+                    <span class="subject-dot"></span>
+                    <h3>Agriculture</h3>
+                </button>
+                <button type="button" class="subject-card" role="listitem" data-subject="History" data-levels="o-level assessment" aria-label="Open History details">
+                    <span class="subject-dot"></span>
+                    <h3>History</h3>
+                </button>
+                <button type="button" class="subject-card" role="listitem" data-subject="Physics" data-levels="o-level a-level assessment" aria-label="Open Physics details">
+                    <span class="subject-dot"></span>
+                    <h3>Physics</h3>
+                </button>
+                <button type="button" class="subject-card" role="listitem" data-subject="IRE/Islam" data-levels="o-level assessment" aria-label="Open IRE/Islam details">
+                    <span class="subject-dot"></span>
+                    <h3>IRE/Islam</h3>
+                </button>
+                <button type="button" class="subject-card" role="listitem" data-subject="Art and Design" data-levels="o-level assessment" aria-label="Open Art and Design details">
+                    <span class="subject-dot"></span>
+                    <h3>Art and Design</h3>
+                </button>
+                <button type="button" class="subject-card" role="listitem" data-subject="Geography" data-levels="o-level assessment" aria-label="Open Geography details">
+                    <span class="subject-dot"></span>
+                    <h3>Geography</h3>
+                </button>
+                <button type="button" class="subject-card" role="listitem" data-subject="Physical Education" data-levels="o-level assessment" aria-label="Open Physical Education details">
+                    <span class="subject-dot"></span>
+                    <h3>Physical Education</h3>
+                </button>
+                <button type="button" class="subject-card" role="listitem" data-subject="Entrepreneurship" data-levels="o-level a-level assessment" aria-label="Open Entrepreneurship details">
+                    <span class="subject-dot"></span>
+                    <h3>Entrepreneurship</h3>
+                </button>
+                <button type="button" class="subject-card" role="listitem" data-subject="Technology and Design" data-levels="o-level a-level assessment" aria-label="Open Technology and Design details">
+                    <span class="subject-dot"></span>
+                    <h3>Technology and Design</h3>
+                </button>
+                <button type="button" class="subject-card" role="listitem" data-subject="Biology" data-levels="o-level a-level assessment" aria-label="Open Biology details">
+                    <span class="subject-dot"></span>
+                    <h3>Biology</h3>
+                </button>
+                <button type="button" class="subject-card" role="listitem" data-subject="English" data-levels="o-level a-level assessment" aria-label="Open English details">
+                    <span class="subject-dot"></span>
+                    <h3>English</h3>
+                </button>
+                <button type="button" class="subject-card" role="listitem" data-subject="Performing Arts" data-levels="o-level assessment" aria-label="Open Performing Arts details">
+                    <span class="subject-dot"></span>
+                    <h3>Performing Arts</h3>
+                </button>
+                <button type="button" class="subject-card" role="listitem" data-subject="Food and Nutrition" data-levels="o-level assessment" aria-label="Open Food and Nutrition details">
+                    <span class="subject-dot"></span>
+                    <h3>Food and Nutrition</h3>
+                </button>
+                <button type="button" class="subject-card" role="listitem" data-subject="Chemistry" data-levels="o-level a-level assessment" aria-label="Open Chemistry details">
+                    <span class="subject-dot"></span>
+                    <h3>Chemistry</h3>
+                </button>
+                <button type="button" class="subject-card" role="listitem" data-subject="Information and Communication Technology (ICT)" data-levels="o-level a-level assessment" aria-label="Open ICT details">
+                    <span class="subject-dot"></span>
+                    <h3>Information and Communication Technology (ICT)</h3>
+                </button>
+            </div>
+            <p class="subjects-hint" id="subjects-hint">Tip: Use the filter chips above, then select a subject for details.</p>
+        </div>
+    </section>
+
+    <!-- Subject Details Drawer -->
+    <section class="subject-drawer" aria-labelledby="subject-drawer-title" aria-hidden="true">
+        <div class="subject-drawer-backdrop" data-drawer-close="true"></div>
+        <div class="subject-drawer-panel" role="dialog" aria-modal="true">
+            <div class="subject-drawer-header">
+                <div>
+                    <span class="subject-drawer-kicker">CURRICULUM OVERVIEW</span>
+                    <h3 id="subject-drawer-title" class="subject-drawer-title">Subject details</h3>
+                    <p id="subject-drawer-meta" class="subject-drawer-meta"> </p>
+                </div>
+                <button type="button" class="subject-drawer-close" data-drawer-close="true" aria-label="Close subject details">
+                    <i class="fas fa-times" aria-hidden="true"></i>
+                </button>
+            </div>
+
+            <div class="subject-drawer-body">
+                <div class="subject-drawer-grid">
+                    <div class="subject-drawer-description">
+                        <p id="subject-drawer-description">Select a subject to view its learning focus, key skills and typical assessment approach.</p>
+
+                        <ul class="subject-drawer-keypoints" id="subject-drawer-keypoints" aria-label="Subject learning highlights">
+                            <li>—</li>
+                        </ul>
+                    </div>
+
+                    <aside class="subject-drawer-aside">
+                        <div class="subject-drawer-box">
+                            <div class="subject-drawer-box-row">
+                                <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+                                <div>
+                                    <div class="small-muted">Recommended level</div>
+                                    <div id="subject-drawer-level">O-Level</div>
+                                </div>
+                            </div>
+                            <div class="subject-drawer-box-row">
+                                <i class="fas fa-file-alt" aria-hidden="true"></i>
+                                <div>
+                                    <div class="small-muted">Curriculum guide</div>
+                                    <a id="subject-drawer-download" class="download-link" href="#" onclick="event.preventDefault()">Download PDF</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="subject-drawer-box subject-drawer-cta">
+                            <div class="small-muted">Next step</div>
+                            <h4>Request the full guide pack</h4>
+                            <p>Get assessment calendars and curriculum documents for your year group.</p>
+                            <a class="btn btn-primary" href="admissions.html">Request pack <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- O-Level Curriculum Section -->
+    <section class="olevel-curriculum">
+        <div class="container">
+            <div class="curriculum-section-header">
+                <span class="curriculum-label">New Lower Secondary Curriculum</span>
+                <h2 class="curriculum-section-title">Senior 1-4 (O-Level)</h2>
+            </div>
+            <div class="curriculum-features">
+                <div class="curriculum-feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Competence-Based Approach</h3>
+                    <p>Focuses on practical skills, research, and project-based learning rather than rote memorization.</p>
+                </div>
+                <div class="curriculum-feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-list-check"></i>
+                    </div>
+                    <h3>Reduced Subjects (12 total)</h3>
+                    <p>11 compulsory: English, Mathematics, History, Geography, Physics, Biology, Chemistry, Physical Education, Religious Education, Entrepreneurship, Kiswahili.</p>
+                </div>
+                <div class="curriculum-feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-check-double"></i>
+                    </div>
+                    <h3>Continuous Assessment (CA)</h3>
+                    <p>20% of final UNER marks from ongoing teacher assessments throughout the term.</p>
+                </div>
+                <div class="curriculum-feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>New Grading: A-E Levels</h3>
+                    <p>Competency-based reports (A, B, C, D, E) instead of traditional numerical grades.</p>
+                </div>
+                <div class="curriculum-feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Thematic Integration</h3>
+                    <p>Holistic education combining Performing Arts (dance, music, drama) and integrated learning.</p>
+                </div>
+                <div class="curriculum-feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Learner-Centered</h3>
+                    <p>Active learning, group work, real-world projects preparing students for 21st century challenges.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- A-Level Curriculum Section -->
+    <section class="alevel-curriculum">
+        <div class="container">
+            <div class="curriculum-section-header">
+                <span class="curriculum-label">A-Level (Senior 5-6)</span>
+                <h2 class="curriculum-section-title">Arts & Sciences</h2>
+            </div>
+            <div class="alevel-streams">
+                <div class="stream-card">
+                    <div class="stream-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Advanced Mathematics</h3>
+                    <p>Principal level math for science and commerce streams with university preparation.</p>
+                </div>
+                <div class="stream-card">
+                    <div class="stream-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3>Advanced Sciences</h3>
+                    <p>Physics, Chemistry, Biology at principal level for medicine, engineering, sciences.</p>
+                </div>
+                <div class="stream-card">
+                    <div class="stream-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Arts & Humanities</h3>
+                    <p>Literature, History, Economics, Geography for social sciences and law preparation.</p>
+                </div>
+                <div class="stream-card">
+                    <div class="stream-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3>Computer Science</h3>
+                    <p>Programming, ICT, and digital skills for technology careers and modern workplace.</p>
+                </div>
+                <div class="stream-card">
+                    <div class="stream-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Economics & Commerce</h3>
+                    <p>Business studies, accounting, entrepreneurship for management and finance careers.</p>
+                </div>
+                <div class="stream-card">
+                    <div class="stream-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Career Guidance</h3>
+                    <p>University preparation, aptitude testing, and career counseling for UACE success.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Extracurricular Activities Section -->
+    <section class="extracurricular">
+        <div class="container">
+            <div class="section-header">
+                <span class="extracurricular-label">Beyond Classroom</span>
+                <h2 class="section-title">Extracurricular Activities</h2>
+            </div>
+            <div class="activities-grid">
+                <div class="activity-card">
+                    <div class="activity-icon">
+                        <i class="fas fa-futbol"></i>
+                    </div>
+                    <h3>Sports</h3>
+                    <p>Football, athletics, netball, and more</p>
+                </div>
+                <div class="activity-card">
+                    <div class="activity-icon">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3>Music</h3>
+                    <p>Choir, instruments, and performance</p>
+                </div>
+                <div class="activity-card">
+                    <div class="activity-icon">
+                        <i class="fas fa-paintbrush"></i>
+                    </div>
+                    <h3>Art Club</h3>
+                    <p>Painting, drawing, and crafts</p>
+                </div>
+                <div class="activity-card">
+                    <div class="activity-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Reading Club</h3>
+                    <p>Literature and storytelling</p>
+                </div>
+                <div class="activity-card">
+                    <div class="activity-icon">
+                        <i class="fas fa-microphone"></i>
+                    </div>
+                    <h3>Drama</h3>
+                    <p>Theater and public speaking</p>
+                </div>
+                <div class="activity-card">
+                    <div class="activity-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3>Science Club</h3>
+                    <p>Experiments and innovation</p>
+                </div>
+                <div class="activity-card">
+                    <div class="activity-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Community Service</h3>
+                    <p>Giving back to society</p>
+                </div>
+                <div class="activity-card">
+                    <div class="activity-icon">
+                        <i class="fas fa-chess"></i>
+                    </div>
+                    <h3>Chess Club</h3>
+                    <p>Strategy and critical thinking</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academic Performance Stats -->
+    <section class="academics-performance" aria-label="Academic performance statistics">
+        <div class="container">
+            <div class="performance-header">
+                <span class="section-label">ACADEMIC PERFORMANCE</span>
+                <h2 class="section-title">Results that reflect strong teaching & mentorship</h2>
+                <p class="section-subtitle">A snapshot of recent academic outcomes. Counters animate when visible.</p>
+            </div>
+
+            <div class="performance-grid" role="list">
+                <div class="perf-card" role="listitem">
+                    <div class="perf-icon" aria-hidden="true"><i class="fas fa-chart-line"></i></div>
+                    <div class="stat-value" aria-live="polite" aria-atomic="true">
+                        <span class="stat-number" data-target="98.7" data-suffix="%">0</span>
+                    </div>
+                    <div class="perf-label">2023 UCE Pass Rate</div>
+                    <div class="perf-note">Consistent grade improvements across key subjects.</div>
+                </div>
+
+                <div class="perf-card" role="listitem">
+                    <div class="perf-icon" aria-hidden="true"><i class="fas fa-trophy"></i></div>
+                    <div class="stat-value" aria-live="polite" aria-atomic="true">
+                        <span class="stat-number" data-target="1" data-suffix="#">0</span>
+                    </div>
+                    <div class="perf-label">District Ranking</div>
+                    <div class="perf-note">Top placement through steady learner progress.</div>
+                </div>
+
+                <div class="perf-card" role="listitem">
+                    <div class="perf-icon" aria-hidden="true"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="stat-value" aria-live="polite" aria-atomic="true">
+                        <span class="stat-number" data-target="100" data-suffix="%">0</span>
+                    </div>
+                    <div class="perf-label">University Placement</div>
+                    <div class="perf-note">Guided career readiness for A-Level learners.</div>
+                </div>
+
+                <div class="perf-card" role="listitem">
+                    <div class="perf-icon" aria-hidden="true"><i class="fas fa-award"></i></div>
+                    <div class="stat-value" aria-live="polite" aria-atomic="true">
+                        <span class="stat-number" data-target="27" data-suffix="+">0</span>
+                    </div>
+                    <div class="perf-label">Top Distinctions</div>
+                    <div class="perf-note">Strong performance in science, ICT and languages.</div>
+                </div>
+            </div>
+
+            <!-- Department highlights -->
+            <div class="department-highlights" aria-label="Department highlights">
+                <div class="section-header">
+                    <span class="section-label">DEPARTMENT HIGHLIGHTS</span>
+                    <h2 class="section-title">Where excellence is built</h2>
+                    <p class="section-subtitle">Focus areas and learning pathways that support academic achievement.</p>
+                </div>
+
+                <div class="department-grid" role="list">
+                    <article class="dept-card" role="listitem">
+                        <div class="dept-top"><i class="fas fa-flask-dehydrator" aria-hidden="true"></i><h3>Sciences</h3></div>
+                        <p>Conceptual mastery through practical experiments, inquiry-based learning and lab work.</p>
+                        <div class="dept-tags"><span>Physics</span><span>Chemistry</span><span>Biology</span></div>
+                    </article>
+
+                    <article class="dept-card" role="listitem">
+                        <div class="dept-top"><i class="fas fa-landmark" aria-hidden="true"></i><h3>Humanities</h3></div>
+                        <p>Critical thinking, communication and historical understanding supported by guided reading.</p>
+                        <div class="dept-tags"><span>History</span><span>Geography</span><span>IRE/Islam</span></div>
+                    </article>
+
+                    <article class="dept-card" role="listitem">
+                        <div class="dept-top"><i class="fas fa-laptop-code" aria-hidden="true"></i><h3>ICT & Technology</h3></div>
+                        <p>Digital skills, applied programming and design thinking that prepare learners for modern work.</p>
+                        <div class="dept-tags"><span>ICT</span><span>Technology & Design</span><span>Entrepreneurship</span></div>
+                    </article>
+
+                    <article class="dept-card" role="listitem">
+                        <div class="dept-top"><i class="fas fa-palette" aria-hidden="true"></i><h3>Arts & Languages</h3></div>
+                        <p>Expressive learning that strengthens literacy, creativity and confident public communication.</p>
+                        <div class="dept-tags"><span>English</span><span>Performing Arts</span><span>Art & Design</span></div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Curriculum guides -->
+            <div class="curriculum-guides" aria-label="Curriculum guide downloads">
+                <div class="section-header">
+                    <span class="section-label">CURRICULUM GUIDES</span>
+                    <h2 class="section-title">Download program outlines</h2>
+                    <p class="section-subtitle">Curriculum guides are sample placeholders—connect real PDF files when available.</p>
+                </div>
+
+                <div class="guide-grid" role="list">
+                    <article class="guide-card" role="listitem">
+                        <div class="guide-icon" aria-hidden="true"><i class="fas fa-school"></i></div>
+                        <h3>O-Level (Senior 1–4) Guide</h3>
+                        <p>Curriculum structure, competence focus, assessment & continuous evaluation overview.</p>
+                        <div class="guide-actions">
+                            <a class="btn btn-primary" href="#" onclick="event.preventDefault()">Download O-Level PDF <i class="fas fa-download" aria-hidden="true"></i></a>
+                            <a class="btn btn-secondary" href="admissions.html">Request document pack <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="guide-card" role="listitem">
+                        <div class="guide-icon" aria-hidden="true"><i class="fas fa-graduation-cap"></i></div>
+                        <h3>A-Level (Senior 5–6) Guide</h3>
+                        <p>Subject streams, learning pathways and career guidance framework for university readiness.</p>
+                        <div class="guide-actions">
+                            <a class="btn btn-primary" href="#" onclick="event.preventDefault()">Download A-Level PDF <i class="fas fa-download" aria-hidden="true"></i></a>
+                            <a class="btn btn-secondary" href="admissions.html">Request document pack <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Existing Results section (kept for brand consistency but visually replaced) -->
+    <section class="results-section" style="display:none;"></section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- About Section -->
+                <div class="footer-section footer-about">
+                    <div class="footer-logo">
+                        <div class="footer-logo-icon">R</div>
+                        <div class="footer-logo-text">
+                            <h4>Rines</h4>
+                            <p>Secondary School</p>
+                        </div>
+                    </div>
+                    <p>Empowering students to achieve excellence in academics, character, and creativity since 2009.</p>
+                    <div class="footer-social">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <div class="footer-links">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About Us</a>
+                        <a href="academics.html">Academics</a>
+                        <a href="admissions.html">Admissions</a>
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+
+                <!-- Featured Links -->
+                <div class="footer-section">
+                    <h3>Featured Links</h3>
+                    <div class="footer-links">
+                        <a href="#">Parent Portal</a>
+                        <a href="#">Administration</a>
+                        <a href="#">Virtual School</a>
+                        <a href="#">School Highlights</a>
+                        <a href="#">Academic Programs</a>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-section footer-contact">
+                    <h3>Contact Info</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Rines Road, Kampala, Uganda</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+256 414 123 456</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>rinesschoolsnamusera@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <p>Mon - Fri: 7:00 AM - 5:00 PM</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-divider"></div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Rines Secondary School. All rights reserved. | Magezi Ntake, Uganda</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chatbot -->
+    <div id="chatbot-btn" class="chatbot-btn">
+        <i class="fas fa-comments"></i>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

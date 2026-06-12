@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Rines Secondary School</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Marquee -->
+    <div class="marquee">
+        <div class="marquee-content">
+            <span>Rines Secondary School // Contact Us // We're Here to Help</span>
+            <span>Rines Secondary School // Contact Us // We're Here to Help</span>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-container">
+                    <div class="logo-icon">R</div>
+                    <div class="logo-text">
+                        <div class="logo-name">RINES</div>
+                        <div class="logo-subtitle">Secondary School</div>
+                    </div>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="blog-and-news.html">Blog & News</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <a href="admissions.html" class="enroll-btn">Enroll Now</a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Hub -->
+    <section class="contact-section" style="margin-top: 110px;">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">COMMUNICATION HUB</span>
+                <h1>Contact Rines Secondary School</h1>
+                <p>Reach the right department, find office hours, and send your message with confidence.</p>
+            </div>
+
+            <!-- Overview Cards -->
+            <div class="contact-hub-overview" role="list" aria-label="Contact hub highlights">
+                <div class="hub-overview-card" role="listitem">
+                    <div class="hub-overview-icon" aria-hidden="true"><i class="fas fa-headset"></i></div>
+                    <h3>Fast routing</h3>
+                    <p>Select a department so your message reaches the right team.</p>
+                </div>
+                <div class="hub-overview-card" role="listitem">
+                    <div class="hub-overview-icon" aria-hidden="true"><i class="fas fa-clock"></i></div>
+                    <h3>Office hours</h3>
+                    <p>Monday–Friday: 8:00 AM–5:00 PM • Saturday: 9:00 AM–1:00 PM</p>
+                </div>
+                <div class="hub-overview-card" role="listitem">
+                    <div class="hub-overview-icon" aria-hidden="true"><i class="fas fa-map-marked-alt"></i></div>
+                    <h3>Visit our campus</h3>
+                    <p>Find us on the map below. Open in Google Maps for directions.</p>
+                </div>
+                <div class="hub-overview-card" role="listitem">
+                    <div class="hub-overview-icon" aria-hidden="true"><i class="fas fa-bullhorn"></i></div>
+                    <h3>Get updates</h3>
+                    <p>Follow us on social media for news, announcements, and events.</p>
+                </div>
+            </div>
+
+            <div class="contact-content contact-hub-grid">
+                <!-- Left: Form -->
+                <div class="contact-form-wrapper">
+                    <div class="contact-hub-card">
+                        <h2>Send us a message</h2>
+
+                        <div id="contact-notification" class="contact-notification" aria-live="polite" aria-atomic="true" hidden></div>
+
+                        <form class="contact-form" id="contactForm" novalidate>
+                            <div class="form-row-2">
+                                <div class="form-group">
+                                    <label for="fullname">Full Name *</label>
+                                    <input type="text" id="fullname" name="fullname" placeholder="Your full name" required minlength="2" autocomplete="name">
+                                    <div class="field-error" id="err-fullname" aria-live="polite"></div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" placeholder="your.email@example.com" required autocomplete="email">
+                                    <div class="field-error" id="err-email" aria-live="polite"></div>
+                                </div>
+                            </div>
+
+                            <div class="form-row-2">
+                                <div class="form-group">
+                                    <label for="phone">Phone (optional)</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="e.g. +256 7xx xxx xxx" autocomplete="tel" inputmode="tel">
+                                    <div class="field-error" id="err-phone" aria-live="polite"></div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="department">Department / Topic *</label>
+                                    <select id="department" name="department" required>
+                                        <option value="" selected disabled>Select a department</option>
+                                        <option value="admissions">Admissions</option>
+                                        <option value="academics">Academics</option>
+                                        <option value="student-welfare">Student Welfare</option>
+                                        <option value="accounts">Accounts / Fees</option>
+                                        <option value="general">General Enquiries</option>
+                                    </select>
+                                    <div class="field-error" id="err-department" aria-live="polite"></div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <input type="text" id="subject" name="subject" placeholder="What’s this about?" required minlength="3">
+                                <div class="field-error" id="err-subject" aria-live="polite"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" placeholder="Write your message..." rows="6" required minlength="10"></textarea>
+                                <div class="field-error" id="err-message" aria-live="polite"></div>
+                            </div>
+
+                            <div class="contact-form-actions">
+                                <button type="submit" class="submit-btn" id="contactSubmit">
+                                    <span class="btn-text">Send Message</span>
+                                    <span class="btn-spinner" aria-hidden="true" hidden><i class="fas fa-spinner fa-spin"></i></span>
+                                </button>
+                                <p class="form-note">
+                                    By submitting, you agree that we may contact you regarding your enquiry.
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Right: Department contacts + Office hours + Social -->
+                <div class="contact-info-wrapper">
+                    <div class="contact-hub-card">
+                        <h2>Department Contacts</h2>
+
+                        <div class="department-contacts">
+                            <div class="dept-contact">
+                                <div class="dept-badge" aria-hidden="true"><i class="fas fa-graduation-cap"></i></div>
+                                <div class="dept-body">
+                                    <h3>Admissions Office</h3>
+                                    <p><a class="contact-link" href="tel:+256702123456">+256 702 123 456</a></p>
+                                    <p><a class="contact-link" href="mailto:admissions@rinesschool.ac.ug">admissions@rinesschool.ac.ug</a></p>
+                                </div>
+                            </div>
+
+                            <div class="dept-contact">
+                                <div class="dept-badge" aria-hidden="true"><i class="fas fa-book"></i></div>
+                                <div class="dept-body">
+                                    <h3>Academics Desk</h3>
+                                    <p><a class="contact-link" href="tel:+256701234567">+256 701 234 567</a></p>
+                                    <p><a class="contact-link" href="mailto:academics@rinesschool.ac.ug">academics@rinesschool.ac.ug</a></p>
+                                </div>
+                            </div>
+
+                            <div class="dept-contact">
+                                <div class="dept-badge" aria-hidden="true"><i class="fas fa-hand-holding-heart"></i></div>
+                                <div class="dept-body">
+                                    <h3>Student Welfare</h3>
+                                    <p><a class="contact-link" href="tel:+256779001122">+256 779 001 122</a></p>
+                                    <p><a class="contact-link" href="mailto:welfare@rinesschool.ac.ug">welfare@rinesschool.ac.ug</a></p>
+                                </div>
+                            </div>
+
+                            <div class="dept-contact">
+                                <div class="dept-badge" aria-hidden="true"><i class="fas fa-receipt"></i></div>
+                                <div class="dept-body">
+                                    <h3>Accounts / Fees</h3>
+                                    <p><a class="contact-link" href="tel:+256772222333">+256 772 222 333</a></p>
+                                    <p><a class="contact-link" href="mailto:accounts@rinesschool.ac.ug">accounts@rinesschool.ac.ug</a></p>
+                                </div>
+                            </div>
+
+                            <div class="dept-contact">
+                                <div class="dept-badge" aria-hidden="true"><i class="fas fa-envelope-open-text"></i></div>
+                                <div class="dept-body">
+                                    <h3>General Enquiries</h3>
+                                    <p><a class="contact-link" href="tel:+256702123456">+256 702 123 456</a></p>
+                                    <p><a class="contact-link" href="mailto:info@rinesschool.ac.ug">info@rinesschool.ac.ug</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info-divider"></div>
+
+                        <h2>Office Hours</h2>
+                        <div class="office-hours" role="table" aria-label="Office hours">
+                            <div class="hours-row" role="row">
+                                <div class="hours-day" role="cell"><strong>Monday – Friday</strong></div>
+                                <div class="hours-time" role="cell">8:00 AM – 5:00 PM</div>
+                            </div>
+                            <div class="hours-row" role="row">
+                                <div class="hours-day" role="cell"><strong>Saturday</strong></div>
+                                <div class="hours-time" role="cell">9:00 AM – 1:00 PM</div>
+                            </div>
+                            <div class="hours-row" role="row">
+                                <div class="hours-day" role="cell"><strong>Sunday</strong></div>
+                                <div class="hours-time" role="cell">Closed</div>
+                            </div>
+                        </div>
+
+                        <div class="info-divider"></div>
+
+                        <h2>Social Media</h2>
+                        <p class="muted">Follow for announcements, campus news, and community highlights.</p>
+                        <div class="social-row" aria-label="Social media links">
+                            <a class="social-pill" href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                                <i class="fab fa-facebook-f" aria-hidden="true"></i> Facebook
+                            </a>
+                            <a class="social-pill" href="#" target="_blank" rel="noopener noreferrer" aria-label="X / Twitter">
+                                <i class="fab fa-x-twitter" aria-hidden="true"></i> X
+                            </a>
+                            <a class="social-pill" href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                <i class="fab fa-instagram" aria-hidden="true"></i> Instagram
+                            </a>
+                            <a class="social-pill" href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">VISIT US</span>
+                <h2>Find Our Campus</h2>
+                <p>Use the map to locate Rines Secondary School and get driving or walking directions.</p>
+            </div>
+
+            <div class="map-hub">
+                <div class="map-container">
+                    <iframe
+                        title="Rines Secondary School location"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.5558484123456!2d32.4572188!3d0.4187291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dafb05ec32e1b%3A0x52ac00dae102cbd3!2sRines%20Secondary%20School!5e0!3m2!1sen!2sug!4v1712973600000"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="map-side">
+                    <div class="map-side-card">
+                        <div class="map-side-icon" aria-hidden="true"><i class="fas fa-map-pin"></i></div>
+                        <h3>Rines Secondary School</h3>
+                        <p class="muted">Rines Road, Kampala, Uganda</p>
+                        <div class="map-side-actions">
+                            <a href="https://www.google.com/maps/place/Rines+Secondary+school/@0.4187291,32.4572188,17z" target="_blank" class="map-btn">
+                                <i class="fas fa-map"></i> Open in Maps
+                            </a>
+                            <a href="tel:+256702123456" class="map-btn map-btn-outline">
+                                <i class="fas fa-phone"></i> Call Office
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="map-side-card">
+                        <h3>Response expectations</h3>
+                        <ul class="checklist">
+                            <li>We aim to respond within 1–2 business days.</li>
+                            <li>Urgent matters can be routed via phone.</li>
+                            <li>For admissions, select “Admissions” in the form.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" aria-labelledby="contact-faq-title">
+        <div class="container">
+            <div class="section-header" style="margin-bottom: 50px;">
+                <span class="section-label">FAQ</span>
+                <h2 id="contact-faq-title">Frequently Asked Questions</h2>
+                <p>Find quick answers before you send your message.</p>
+            </div>
+
+            <div class="faq-accordion" role="region" aria-label="Contact FAQ">
+                <div class="faq-item" data-open="false">
+                    <button class="faq-question" type="button" aria-expanded="false">
+                        <span>What is your response time?</span>
+                        <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+                    <div class="faq-answer" aria-hidden="true">
+                        <p>We aim to respond within 1–2 business days. During peak periods, it may take a little longer.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-open="false">
+                    <button class="faq-question" type="button" aria-expanded="false">
+                        <span>Which department should I choose?</span>
+                        <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+                    <div class="faq-answer" aria-hidden="true">
+                        <p>Select the closest topic (Admissions, Academics, Student Welfare, or Accounts). Your message will be routed accordingly.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-open="false">
+                    <button class="faq-question" type="button" aria-expanded="false">
+                        <span>Can I contact you outside office hours?</span>
+                        <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+                    <div class="faq-answer" aria-hidden="true">
+                        <p>Yes. You can submit the form anytime. Calls and immediate support are best made during office hours.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-open="false">
+                    <button class="faq-question" type="button" aria-expanded="false">
+                        <span>Do you accept messages via email?</span>
+                        <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+                    <div class="faq-answer" aria-hidden="true">
+                        <p>Yes—email the relevant department using the contact details above. The form is also a reliable option.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-open="false">
+                    <button class="faq-question" type="button" aria-expanded="false">
+                        <span>How do I get directions to campus?</span>
+                        <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+                    <div class="faq-answer" aria-hidden="true">
+                        <p>Use the Google Map embedded on this page, or click “Open in Maps” for full directions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About Rines</h4>
+                    <p>Rines Secondary School is dedicated to shaping future leaders through academic excellence and holistic development.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="academics.html">Academics</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: info@rinesschool.ac.ug<br>
+                    Phone: +256 702 123 456<br>
+                    Address: Rines Road, Kampala</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Rines Secondary School. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <script>
+        // FAQ accordion (contact page only)
+        (function initContactFAQ() {
+            if (typeof document === 'undefined') return;
+            const accordion = document.querySelector('.faq-accordion');
+            if (!accordion) return;
+
+            const items = accordion.querySelectorAll('.faq-item');
+            function setOpen(item, open) {
+                item.dataset.open = open ? 'true' : 'false';
+                const btn = item.querySelector('.faq-question');
+                const ans = item.querySelector('.faq-answer');
+
+                if (btn) btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+                if (ans) ans.setAttribute('aria-hidden', open ? 'false' : 'true');
+            }
+
+            items.forEach((item) => {
+                setOpen(item, false);
+                const btn = item.querySelector('.faq-question');
+                btn?.addEventListener('click', () => {
+                    const isOpen = item.dataset.open === 'true';
+                    setOpen(item, !isOpen);
+                });
+            });
+        })();
+    </script>
+</body>
+</html>
+
